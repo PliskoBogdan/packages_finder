@@ -2,7 +2,6 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
       dark
     >
       <div class="d-flex align-center">
@@ -38,20 +37,22 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+
     </v-main>
+
+    <CFooter />
   </v-app>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
 
+import CFooter from '@/components/CFooter.vue'
 export default Vue.extend({
   name: 'App',
 
   components: {
-    HelloWorld
+    CFooter
   },
 
   data: () => ({
@@ -59,3 +60,7 @@ export default Vue.extend({
   })
 })
 </script>
+
+<styles lang="scss">
+@import url('@/assets/styles/index.scss');
+</styles>
