@@ -3,6 +3,10 @@ import App from './App.vue'
 import store from './store'
 import vuetify from './plugins/vuetify'
 
+import setCustomFilters from "@/filters/index";
+
+setCustomFilters()
+
 Vue.config.productionTip = false
 
 new Vue({
